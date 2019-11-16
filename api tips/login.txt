@@ -1,0 +1,14 @@
+Login API tips:
+	Request parameters: 
+			[UserPhone]
+			[UserPass]
+	Parameters Datatype:			
+			[UserPhon]: varchar (14)
+			[UserPass]: Text, UserPass in md5 format
+ 	Response Parameters:
+			[UserName]			
+			[UserPhone]
+			[UserCompanyId]
+			[token]
+	Example for response:	[{"UserName":"HamedMohammedHammed","UserPhone":"00249924594681","UserCompanyId":1,"token":"d16e4b5f0d1bfa17cc78df2ca1311c540f3629a5e086539f116e691d161bdbc5a3a8ebad52d66384cf5dde30b018ba85359deefa9c43f4a636341179b54a3587"}]
+			

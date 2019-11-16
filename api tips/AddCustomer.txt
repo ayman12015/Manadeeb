@@ -1,0 +1,13 @@
+Add Customer API tips:
+	Request parameters: 
+			[UserCompanyId]
+			[CustName]
+			[ShopName]
+			[PhoneNumber]
+			[DayId]
+			[Lon]
+			[Lan]
+			[token]
+
+
+			

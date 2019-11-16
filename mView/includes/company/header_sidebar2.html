@@ -1,0 +1,207 @@
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="../../controllers/company/index.php"><img src="../../Design/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
+         
+          <h5 class="centered">{$elmohandis_paint}</h5>
+        
+        
+          <li class="mt">
+            <a class="{if isset($active_index)}active {/if}" href="../../controllers/company/index.php">
+              <i class="fa fa-dashboard"></i>
+              <span>{$dashboards}</span>
+              </a>
+          </li>
+          
+         <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-user"></i>
+              <span>{$Users_management}</span>
+              </a>
+            <ul class="sub">
+			  <li class="{if isset($active_NewUser)}active {/if}"><a href="../../controllers/company/NewUser.php">{$Add_New_Users_Admin}</a></li>
+              <li class="{if isset($active_NewUserPhone)}active {/if}"><a href="../../controllers/company/NewUserPhone.php">{$Add_New_Users_pos}</a></li>
+                           
+              <li class="{if isset($active_SystemSetting)}active {/if}"><a href="../../controllers/company/SystemSetting.php">{$System_setting}</a></li>
+ 
+            </ul>
+          </li>
+      
+		   <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-shopping-cart"></i>
+              <span>{$products_management}</span>
+              </a>
+            <ul class="sub">
+            	<li class="{if isset($active_Vendors)}active {/if}">
+                <a href="../../controllers/company/Vendors.php">{$products_vendors}</a></li>
+                <li class="{if isset($active_Packages)}active {/if}">
+                <a href="../../controllers/company/Packages.php">{$Products_Packages}</a></li>                
+                <li class="{if isset($active_NewProduct)}active {/if}">
+                <a href="../../controllers/company/NewProduct.php">{$ADD_NEW_Products}</a></li>
+			    <li class="{if isset($active_PricingProducts)}active {/if}">
+                <a href="../../controllers/company/PricingProducts.php">{$Pricing_Products}</a></li>
+			     			  
+            </ul>
+            
+          </li> 
+                    
+           <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>{$Customers_Management}</span>
+              </a>
+<ul class="sub">
+<li class="{if isset($active_AddNewCustomer)}active {/if}"><a href="../../controllers/company/AddNewCustomer.php">{$Add_New_Customer}</a></li>
+<li class="{if isset($active_CustomersClasse)}active {/if}"><a href="../../controllers/company/CustomersClasse.php">{$Customers_Classe}</a></li>
+<li class="{if isset($active_ClassesConfigrations)}active {/if}"><a href="../../controllers/company/ClassesConfigrations.php">{$Classes_Configrations}</a></li>
+<li class="{if isset($active_CustomersClassification)}active {/if}"><a href="../../controllers/company/CustomersClassification.php">{$Customers_Classification}</a></li>
+<li class="{if isset($active_CustomersManagement)}active {/if}"><a href="../../controllers/company/CustomersManagement.php">{$Manage_Users_Customers}</a></li>
+
+
+</ul>
+          </li>
+          
+          
+		  <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-archive"></i>
+              <span>{$Store_Management}</span>
+              </a>
+            <ul class="sub">
+              
+              <li class="{if isset($active_CreateStore)}active {/if}"><a href="../../controllers/company/CreateStore.php">{$Create_Store}</a></li>
+              
+              <li class="{if isset($active_ProductsStore)}active {/if}"><a href="../../controllers/company/ProductsStore.php">{$Products_store}</a></li>
+              
+            </ul>
+          </li>
+          
+          
+          
+          
+		  <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-truck"></i>
+              <span>{$Trucks_and_Shipment}</span>
+              </a>
+            <ul class="sub">
+<li class="{if isset($active_CustomersRequests)}active {/if}"><a href="../../controllers/company/CustomersRequests.php">{$Customers_Request}</a></l         
+><li class="{if isset($active_NewShipmentment)}active {/if}"><a href="../../controllers/company/NewShipmentment.php">{$New_Shipmentment}</a></li>
+   
+<!--<li class="{if isset($active_CollectionOfInvoices)}active {/if}"><a href="../../controllers/company/CollectionOfInvoices.php">Collection Of Invoices</a></li>    -->
+            </ul>
+          </li>
+          
+          
+          
+          
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-dollar"></i>
+              <span>{$Finance_Management}</span>
+              </a>
+            <ul class="sub">
+              <li class="{if isset($active_Finance)}active {/if}"><a href="../../controllers/company/Finance.php">{$Finance}</a></li>            
+            </ul>
+          </li>
+          
+		  
+		<li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-building-o"></i>
+              <span>{$General_Reports}</span>
+              </a>
+            
+        <ul class="sub">
+            <li class="{if isset($active_rptActiveUsersWeb)}active {/if}">
+            <a href="../../controllers/company/rptActiveUsersWeb.php">{$Users_status_admin}</a></li>
+        </ul>
+        <ul class="sub">
+            <li class="{if isset($active_rptActiveUsersPhone)}active {/if}">
+            <a href="../../controllers/company/rptActiveUsersPhone.php">{$Users_Status_POS}</a></li>
+        </ul>
+        <ul class="sub">
+            <li class="{if isset($active_rptUserCustomers)}active {/if}">
+            <a href="../../controllers/company/rptUserCustomers.php">{$User_Customers} </a></li>
+        </ul>
+        <ul class="sub">
+            <li class="{if isset($active_rptProductsPackagesPrice)}active {/if}">
+            <a href="../../controllers/company/rptProductsPackagesPrice.php">{$Product_Packages_and_Price}</a></li>
+        </ul>
+        <ul class="sub">
+            <li class="{if isset($active_rptTrucksShipmentment)}active {/if}">
+            <a href="../../controllers/company/rptTrucksShipmentment.php">{$Trucks_Shipmentment}</a></li>
+        </ul>
+        <ul class="sub">
+            <li class="{if isset($active_rptReceiptsPayment)}active {/if}">
+            <a href="../../controllers/company/rptReceiptsPayment.php">{$Receipts_Payment} </a></li>
+        </ul>
+        
+         <ul class="sub">
+            <li class="{if isset($active_rptCustomersPendingBills)}active {/if}">
+            <a href="../../controllers/company/rptCustomersPendingBills.php">{$Customers_Pending_Bills}</a></li>
+        </ul>
+        
+       </li>
+		  
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-bar-chart-o"></i>
+              <span>{$Custome_Reports}</span>
+              </a>
+              
+    <ul class="sub">            
+    <li class="{if isset($active_CrptCustomerPerformance)}active {/if}">
+        <a href="../../controllers/company/CrptCustomerPerformance.php">{$Customer_Performance} </a>
+    </li>              
+  </ul>
+              
+    
+  <ul class="sub">            
+    <li class="{if isset($active_CrptProductsSalesGeneral)}active {/if}">
+        <a href="../../controllers/company/CrptProductsSalesGeneral.php">{$Products_Sales_Genral}</a>
+    </li>              
+  </ul>
+  
+  <ul class="sub">            
+    <li class="{if isset($active_CrptProductsSalesPerProduc)}active {/if}">
+        <a href="../../controllers/company/CrptProductsSalesPerProduc.php">{$Products_Sales_Per_Product}</a>
+    </li>              
+  </ul>
+  
+  <ul class="sub">            
+    <li class="{if isset($active_CrptSalesRevenueGeneral)}active {/if}">
+        <a href="../../controllers/company/CrptSalesRevenueGeneral.php">{$Sales_Revenue_General}</a>
+    </li>              
+  </ul>
+  
+  <ul class="sub">            
+    <li class="{if isset($active_CrptSalesRevenuePerProduct)}active {/if}">
+        <a href="../../controllers/company/CrptSalesRevenuePerProduct.php">{$Sales_Revenue_Per_Product}</a>
+    </li>              
+  </ul> 
+                        
+</li>
+          
+          <li>
+            <a href="../../controllers/company/google_maps.php">
+              <i class="fa fa-map-marker"></i>
+              <span>{$Customer_Loaction_in_Map}</span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->

@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+  ServerName 192.168.0.103
+  ServerAlias 192.168.0.103
+  DocumentRoot "${INSTALL_DIR}/www"
+  <Directory "${INSTALL_DIR}/www/">
+    Options +Indexes +Includes +FollowSymLinks +MultiViews
+    AllowOverride All
+    Require ip 192.168
+  </Directory>
+
+</VirtualHost>
